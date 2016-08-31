@@ -1,0 +1,127 @@
+﻿@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+
+body {
+    margin: 0;
+    font-family: myFirstFont;
+    background: url(../images/indexbg.jpg) no-repeat;
+}
+
+.header {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+
+.navbar {
+    position: relative;
+    min-height: 70px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px #808080 solid;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 19px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: orangered;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #f76f6f;
+    background-color: #fff;
+}
+
+.mainContent {
+    position: absolute;
+    width: 100%;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 10% 0;
+    border-bottom: none;
+}
+
+    .page-header h1 {
+        color: white;        
+        font-weight: bold;        
+    }
+
+    .page-header small {
+        font-size: 16pt;
+        font-weight: 300;
+    }
+
+.whiteText {
+    color: white;
+}
+
+.offWhiteText {
+    color: #D6DBDF;
+    font-weight: 100;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.input-group-addon {
+    border-radius: 20px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ffab91;
+    color: none;
+}
+
+.buttonNext {
+    background-color: #ffab91;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+    padding: 9px 22px 9px 25px;
+    vertical-align: middle;
+}
+
+    .buttonNext:hover {
+        background-color: #f76f6f;
+        cursor: pointer;
+    }
+
+.form-control {
+    color: #ffab91;
+}
+
+    .form-control:hover, .form-control:focus {
+        border-color: #ffab91;
+    }
+
+.footer {
+    height: 40px;
+    width: 100%;
+    background: url(../images/footerbg.jpg) no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    color: gray;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index:5;
+}
