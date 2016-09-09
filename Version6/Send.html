@@ -1,0 +1,186 @@
+﻿<html>
+<head>
+    <title>Gifto</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/ionicons.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").tooltip();
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body class="otherBody">
+    <div class="container-fluid">
+        <!-- Remove below area to remove Navigation bar-->
+        <!--<div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid header">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Index.html"><img src="images/logo.png" class="logoStyle" height="60" width="80" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navBar">
+                        <ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
+                            <li class="active"><a href="BuildCard.html">How It Works</a></li>
+                            <li><a href="Send.html">Redeem</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms and Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>-->
+        <!-- Remove the above content till here for AngularJs -->
+        <div class="row mainContent margin3top">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Order Summary <label class="helpText ionicons ion-compose pull-right"> <a href="#">Edit</a></label>
+                    </div>
+                    <div class="panel-body">
+                        <div class="buildCashBg sendBg blueTooltip" data-toggle="tooltip" data-placement="bottom" title="$600 for a good for airfare at any Travel agency">
+                            <div class="cardOffer sendOffer">
+                                <div class="cardImgAmount">$600</div>
+                                <div class="cardImgText">Buy Tickets to Bali, and enjoy the beaches.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <table class="table borderless">
+                            <tbody>
+                                <tr>
+                                    <td>Amount</td>
+                                    <td width="20%">:</td>
+                                    <td>$300</td>
+                                </tr>
+                                <tr>
+                                    <td>Fees</td>
+                                    <td>:</td>
+                                    <td>$20</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>:</td>
+                                    <td>$320 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Deliver</td>
+                                    <td>:</td>
+                                    <td>Email</td>
+                                </tr>
+                                <tr>
+                                    <td>When</td>
+                                    <td>:</td>
+                                    <td>Tomorrow</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <form class="form-horizontal padding0">
+                    <div class="form-group margin3bottom">
+                        <label for="inputAmount" class="col-sm-12">To:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="inputTo" placeholder="Recipient's first and last name please">
+                        </div>
+                    </div>
+                    <div class="form-group margin3bottom">
+                        <label for="inputSuggestion" class="col-sm-12">From:</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="inputFrom" placeholder="Your first name and last name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage" class="col-sm-12">Note:</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage" class="col-sm-12">Delivery:</label>
+                        <div class="searchable-container">
+                            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                    <label class="btn btn-default">
+                                        <div class="bizcontent">
+                                            <input type="checkbox" name="delivery[]" autocomplete="off" value="">
+                                            <span class="ionicons ion-checkmark"></span>
+                                            <h5>Email</h5>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                    <label class="btn btn-default">
+                                        <div class="bizcontent">
+                                            <input type="checkbox" name="delivery[]" autocomplete="off" value="">
+                                            <span class="ionicons ion-checkmark"></span>
+                                            <h5>Text</h5>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                    <label class="btn btn-default">
+                                        <div class="bizcontent">
+                                            <input type="checkbox" name="delivery[]" autocomplete="off" value="">
+                                            <span class="ionicons ion-checkmark"></span>
+                                            <h5>Mail</h5>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                    <label class="btn btn-default">
+                                        <div class="bizcontent">
+                                            <input type="checkbox" name="delivery[]" autocomplete="off" value="">
+                                            <span class="ionicons ion-checkmark"></span>
+                                            <h5>Print</h5>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <label class="col-sm-12 padding2top">The gift will be emailed to the recipient in an e-card. If you like to print the gift card yourself, please select the <a href="">print</a> option.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Recipient's email address'">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-center"><a href="#" style="text-align:center;">The gift will be emailed to the recipient in an e-card, if you would.</a></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9 col-xs-12">
+                            <button type="submit" class="btn buttonNext whiteText">Complete Purchase</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Remove the footer below-->
+        <!--<div class="row">
+            <div class="footer">
+                &copy; <span style="color:white">Gifto</span>. All Rights Reserved. Designed By Arnab
+            </div>
+        </div>-->
+        <!-- END of footer-->
+    </div>
+</body>
+</html>
