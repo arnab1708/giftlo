@@ -18,7 +18,10 @@ body {
 }
 
 a {
-    color: #f76f6f;
+    color: #febbbb;
+}
+a:hover, a:visited {
+    color: #f9ab8e;
 }
 
 .header {
@@ -93,7 +96,7 @@ small {
 }
 
 .redPinkText {
-    color: #ffab91;
+    color: #f9ab8e;
 }
 
 .offWhiteText {
@@ -108,12 +111,12 @@ small {
 .input-group-addon {
     border-radius: 20px;
     padding: 5px 5px 5px 10px;
-    background-color: #ffab91;
+    background-color: #f9ab8e;
     color: none;
 }
 
 .buttonNext {
-    background-color: #ffab91;
+    background-color: #f9ab8e;
     border-radius: 20px;
     font-size: 14px;
     font-weight: bolder;
@@ -131,11 +134,11 @@ small {
     }
 
 .form-control {
-    color: #ffab91;
+    color: #f9ab8e;
 }
 
     .form-control:hover, .form-control:focus {
-        border-color: #ffab91;
+        border-color: #f9ab8e;
     }
 
 .buildCashBg {
@@ -299,7 +302,7 @@ form {
         color: #000;
         background-color: #fff;
         border-color: transparent;
-        border-top: 10px solid #ffab91;
+        border-top: 10px solid #febbbb;
         border-bottom: 2px solid #a9a9a9;
         border-radius: 0;
         font-family: myFirstFont;
@@ -313,7 +316,7 @@ form {
         background-color: #fff;
         border-color: transparent;
         border-top: 2px solid #a9a9a9;
-        border-bottom: 10px solid #ffab91;
+        border-bottom: 10px solid #febbbb;
         border-radius: 0;
     }
 
@@ -335,14 +338,17 @@ form {
     }
 
     .searchable-container label.btn {
-        padding: 0 12px;
+        padding: 0px 20px 0px 12px;
+        height: 30px !important;
     }
 
     .searchable-container label.btn-default {
-        width: 90%;
-        border: 1px solid #efefef;
+        width: 100%;
+        border: 1px solid #febbbb;
         margin: 0px;
-        background-color: #ffab91;
+        margin-top: 5px;
+        border-radius: 0px;
+        background-color: #febbbb;
         box-shadow: 2px 2px 2px 0 #ccc;
     }
 
@@ -350,8 +356,12 @@ form {
         width: 100%;
     }
 
+        .searchable-container label .bizcontent h5 {
+            margin-top: 7px;
+        }
+
     .searchable-container .btn-group {
-        width: 90%;
+        width: 100%;
     }
 
     .searchable-container .btn span.ionicons {
@@ -370,6 +380,24 @@ form {
 
 .margin30bottom {
     margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #febbbb !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #febbbb !important;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #febbbb !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #febbbb !important;
 }
 
 .footer {
