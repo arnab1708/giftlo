@@ -20,9 +20,10 @@ body {
 a {
     color: #febbbb;
 }
-a:hover, a:visited {
-    color: #f9ab8e;
-}
+
+    a:hover, a:visited {
+        color: #f9ab8e;
+    }
 
 .header {
     padding-left: 15%;
@@ -142,7 +143,8 @@ small {
     }
 
 .buildCashBg {
-    background: url(../images/buildCardBg.jpg) no-repeat;
+    background: url(../images/buildCardBg.jpg) repeat-y;
+    background-size: 300px 150px;
     border-radius: 4%;
     min-height: 300px;
     max-height: 300px;
@@ -306,10 +308,19 @@ form {
         border-bottom: 2px solid #a9a9a9;
         border-radius: 0;
         font-family: myFirstFont;
+        font-size: 15px;
+    }
+
+    .panel-primary > .panel-heading > label > a {
+        color: #000;
+        background-color: #fff;
+        font-family: myFirstFont;
+        font-size: 14px;
     }
 
     .panel-primary > .panel-body {
         padding-top: 0;
+        padding-bottom: 23%;
     }
 
     .panel-primary > .panel-footer {
@@ -364,12 +375,12 @@ form {
         width: 100%;
     }
 
-    .searchable-container .btn span.ionicons {
+    .searchable-container .btn span img {
         opacity: 0;
         float: left;
     }
 
-    .searchable-container .btn.active span.ionicons {
+    .searchable-container .btn.active span img {
         opacity: 1;
         float: left;
     }
