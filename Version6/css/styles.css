@@ -43,14 +43,12 @@ a {
 }
 
 .navbar {
-    /*min-height: 70px;*/
     border-radius: 0px;
     margin-bottom: 0px;
     border-bottom: 1px #808080 solid;
 }
 
 .navbar-fixed-top {
-    top: 0px; /* you'll have to figure out the exact number here */
     height: 70px;
     position: relative;
 }
@@ -85,6 +83,7 @@ a {
 
 h1 {
     font-weight: bold;
+    padding-top: 10px;
 }
 
 small {
@@ -150,7 +149,7 @@ small {
     max-height: 300px;
     min-width: 300px;
     max-width: 300px;
-    margin: 15% auto;
+    margin: 15% auto 0% auto;
     position: relative;
 }
 
@@ -161,6 +160,11 @@ small {
     max-width: 250px;
     min-width: 170px;
     margin: 0 auto;
+}
+
+.successBg {
+    height: 100% !important;
+    width: 100% !important;
 }
 
 .cardOffer {
@@ -177,6 +181,11 @@ small {
     max-height: 250px;
 }
 
+.successOffer {
+    height: 100% !important;
+    width: 100% !important;
+}
+
 .cardImgText {
     padding-top: 5%;
     padding-left: 15%;
@@ -191,7 +200,7 @@ small {
     padding-top: 22%;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
     font-weight: 900;
     position: relative;
@@ -253,6 +262,10 @@ form {
     margin: 1% 0;
 }
 
+.margin2top{
+    margin: 2% 0;
+}
+
 .table {
     margin: 0 auto;
 }
@@ -262,17 +275,54 @@ form {
     border: none;
 }
 
-.blueTooltip + .tooltip > .tooltip-inner {
+.tableGap > tbody > tr > td {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.successHead {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+    font-family: myFirstFont;
+}
+
+.successText {
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+    font-family: myFirstFont;
+}
+
+.arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #7FCCD6;
+    margin-left: 49%;
+    margin-top: 1%;
+}
+
+.arrowBody {
     background-color: #7FCCD6;
     border-bottom-color: #f00;
     border-radius: 20px;
-    max-width: 270px;
+    width: auto;
     font-size: 14px;
     padding: 7px 15px;
+    color: white;
+    text-align: center;
+    margin: 0% auto;
 }
 
-.blueTooltip + .tooltip > .tooltip-arrow {
-    border-bottom-color: #7FCCD6;
+.width300 {
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .orderList ul li {
@@ -311,16 +361,16 @@ form {
         font-size: 15px;
     }
 
-    .panel-primary > .panel-heading > label > a {
-        color: #000;
-        background-color: #fff;
-        font-family: myFirstFont;
-        font-size: 14px;
-    }
+        .panel-primary > .panel-heading > label > a {
+            color: #000;
+            background-color: #fff;
+            font-family: myFirstFont;
+            font-size: 14px;
+        }
 
     .panel-primary > .panel-body {
         padding-top: 0;
-        padding-bottom: 23%;
+        padding-bottom: 1%;
     }
 
     .panel-primary > .panel-footer {
@@ -339,9 +389,18 @@ form {
     padding-top: 2%;
 }
 
+.pinkBg {
+    background-color: #febbbb;
+}
+
 .searchable-container {
     margin: 0 0 0 0;
 }
+
+    .searchable-container .col-md-3, .searchable-container .col-lg-3 {
+        padding-right: 0% !important;
+        width: 22%;
+    }
 
     .searchable-container label.btn-default.active {
         background-color: #FFE4E4;
@@ -350,7 +409,7 @@ form {
 
     .searchable-container label.btn {
         padding: 0px 20px 0px 12px;
-        height: 30px !important;
+        height: 27px !important;
     }
 
     .searchable-container label.btn-default {
@@ -368,7 +427,7 @@ form {
     }
 
         .searchable-container label .bizcontent h5 {
-            margin-top: 7px;
+            margin-top: 5px;
         }
 
     .searchable-container .btn-group {
@@ -461,6 +520,18 @@ form {
     .navbar-collapse .nav > li > a {
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    small {
+        font-size: 18px;
+    }
+
+    .searchable-container .col-md-3, .searchable-container .col-lg-3 {
+        width: 48%;
     }
 }
 
