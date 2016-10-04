@@ -141,6 +141,19 @@ small {
         border-color: #f9ab8e;
     }
 
+.buildBg {
+    /*background: url(../images/buildCardBg.jpg) repeat-y;*/
+    background: url(../images/card.png) no-repeat;
+    background-size: 300px 300px;
+    border-radius: 4%;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 15% auto 0% auto;
+    position: relative;
+}
+
 .buildCashBg {
     background: url(../images/buildCardBg.jpg) repeat-y;
     background-size: 300px 150px;
@@ -197,7 +210,7 @@ small {
 }
 
 .cardImgAmount {
-    padding-top: 22%;
+    padding-top: 25%;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 55px;
@@ -205,6 +218,14 @@ small {
     font-weight: 900;
     position: relative;
     font-family: 'Bookman Old Style';
+}
+
+#clickGift {
+    margin-left: 33%;
+}
+
+#redeemGift {
+    margin-left: 33%;
 }
 
 form {
@@ -262,7 +283,7 @@ form {
     margin: 1% 0;
 }
 
-.margin2top{
+.margin2top {
     margin: 2% 0;
 }
 
@@ -533,6 +554,14 @@ form {
     .searchable-container .col-md-3, .searchable-container .col-lg-3 {
         width: 48%;
     }
+
+    #clickGift {
+        margin-left: 0%;
+    }
+
+    #redeemGift {
+        margin-left: 0%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -568,5 +597,13 @@ form {
 
     .cardImgAmount {
         font-size: 55px;
+    }
+
+    #clickGift {
+        margin-left: 0%;
+    }
+
+    #redeemGift {
+        margin-left: 0%;
     }
 }
