@@ -1,0 +1,159 @@
+﻿<html>
+<head>
+    <title>Gifto</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/ionicons.min.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body class="otherBody">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid header">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Index.html"><img src="images/logo.png" class="logoStyle" height="60" width="80" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navBar">
+                        <ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
+                            <li class="active"><a href="BuildCard.html">How It Works</a></li>
+                            <li><a href="Send.html">Redeem</a></li>
+                            <li><a href="Success.html">Terms</a></li>
+                            <li><a href="Redeem.html">FAQ</a></li>
+                            <li><a href="OpenGift.html">Terms and Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row mainContent margin2top">
+            <div class="col-md-12">
+                <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-horizontal">
+                        <div class="form-group" style="margin-top: 7%; margin-bottom: 0;">
+                            <div class="col-sm-12 col-xs-12">
+                                <button type="submit" class="btn buttonNext whiteText" data-toggle="modal" data-target="#paytmModal" style="width: 450px;">Credit to my Paytm wallet</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="col-sm-12">Instantaneous transfer. Share your Paytm linked phone number.</h5>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="form-group" style="margin-top: 10%; margin-bottom: 0;">
+                            <div class="col-sm-12 col-xs-12">
+                                <button type="submit" class="btn buttonNext whiteText" data-toggle="modal" data-target="#upiModal" style="width: 450px;">Credit to my bank account through UPI</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="col-sm-12">Instantaneous transfer. Share your Virtual Payment Address.</h5>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="form-group" style="margin-top: 10%; margin-bottom:0;">
+                            <div class="col-sm-12 col-xs-12">
+                                <button type="submit" class="btn buttonNext whiteText" data-toggle="modal" data-target="#bankModal" style="width: 450px;">Credit to bank account through account number</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="col-sm-12">It takes 2-3 business days. Share your account number and IFSC code.</h5>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="form-group" style="margin-top: 10%; margin-bottom: 0;">
+                            <div class="col-sm-12 col-xs-12">
+                                <button type="submit" class="btn buttonNext whiteText" data-toggle="modal" data-target="#giftModal" style="width: 450px;">Get a gift voucher</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="col-sm-12">It takes 4-5 hours</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="paytmModal" tabindex="-1" role="dialog" aria-labelledby="paytmModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body redeemModalBody">
+                        <h3 class="redPinkText text-center">
+                            Phone Number linked to Paytm account
+                        </h3>
+                        <input type="text" class="form-control modalInput" id="inputCode" placeholder="You will NOT be charged!">
+                        <button class="btn buttonNext whiteText modalBtn">Receive my Funds!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="upiModal" tabindex="-1" role="dialog" aria-labelledby="upiModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body redeemModalBody">
+                        <h3 class="redPinkText text-center">
+                            Your Virtual Payment Address. Click here for help
+                        </h3>
+                        <input type="text" class="form-control modalInput" id="inputCode" placeholder="You will NOT be charged!">
+                        <button class="btn buttonNext whiteText modalBtn">Receive my Funds!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="bankModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body redeemModalBody">
+                        <h3 class="redPinkText text-center">
+                            Your Account number and IFSC code
+                        </h3>
+                        <input type="text" class="form-control modalInput" placeholder="Account Number">
+                        <input type="text" class="form-control modalInput2" placeholder="IFSC Code">
+                        <button class="btn buttonNext whiteText modalBtn">Receive my Funds!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="giftModal" tabindex="-1" role="dialog" aria-labelledby="bankModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body redeemModalBody">
+                        <h3 class="redPinkText text-center">
+                            Select which gift voucher you want
+                        </h3>
+                        <div class="modalInput">
+                            <div class="col-sm-4 col-xs-12 text-center roModalimg">
+                                <img src="images/bmsLogo.png" height="40" width="120" />
+                            </div>
+                            <div class="col-sm-4 col-xs-12 text-center roModalimg">
+                                <img src="images/amzLogo.png" height="40" width="120" />
+                            </div>
+                            <div class="col-sm-4 col-xs-12 text-center roModalimg">
+                                <img src="images/mynLogo.png" height="40" width="120" />
+                            </div>
+                        </div>
+                        <button class="btn buttonNext whiteText modalBtn">Receive my Funds!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="footer">
+                &copy; <span style="color:white">Gifto</span>. All Rights Reserved. Designed By Arnab
+            </div>
+        </div>
+    </div>
+</body>
+</html>
