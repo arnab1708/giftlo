@@ -133,6 +133,11 @@ small {
         color: white;
     }
 
+.rOptBtn {
+    width: 450px;
+    margin: 0 auto;
+}
+
 .form-control {
     color: #f9ab8e;
 }
@@ -594,6 +599,12 @@ form {
     .roModalimg {
         margin-top: 20px;
     }
+
+    .rOptBtn {
+        width: 100%;
+        height: auto !important;
+        white-space: normal;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -641,5 +652,11 @@ form {
 
     .imgPhotoUpload {
         width: 100% !important;
+    }
+
+    .rOptBtn {
+        width: 100%;
+        height: auto !important;
+        white-space: normal;
     }
 }
