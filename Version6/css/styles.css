@@ -138,6 +138,10 @@ small {
     margin: 0 auto;
 }
 
+.roModalimg {
+    padding: 10px;
+}
+
 .form-control {
     color: #f9ab8e;
 }
@@ -441,6 +445,10 @@ form {
 
 .pinkBg {
     background-color: #FFE4E4;
+}
+
+.activeImgVoucher {
+    border: 2px solid #f9ab8e;
 }
 
 .searchable-container {
