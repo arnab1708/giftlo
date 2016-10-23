@@ -54,14 +54,38 @@
                         <div class="wrap">
                             <div class="col-md-12">
                                 <h3 class="redPinkText text-center">Don't have an account? Sign Up!</h3>
-                                <div class="col-md-offset-2 col-md-8">
-                                    <div class="span" style="margin-top:10%;"><a href="#"><img src="images/facebook.png" alt="" /><i>Sign In with Facebook</i><div class="clear"></div></a></div>
-                                    <div class="span1"><a href="#"><img src="images/twitter.png" alt="" /><i>Sign In with Twitter</i><div class="clear"></div></a></div>
-                                    <div class="span2"><a href="#"><img src="images/gplus.png" alt="" /><i>Sign In with Google+</i><div class="clear"></div></a></div>
-                                </div>
+                                <div class="span" data-dismiss="modal" data-toggle="modal" data-target="#verifyModal" style="margin-top:10%;"><a href="#"><img src="images/facebook.png" alt="" /><i>Sign In with Facebook</i><div class="clear"></div></a></div>
+                                <div class="span1" data-dismiss="modal" data-toggle="modal" data-target="#verifyModal"><a href="#"><img src="images/twitter.png" alt="" /><i>Sign In with Twitter</i><div class="clear"></div></a></div>
+                                <div class="span2" data-dismiss="modal" data-toggle="modal" data-target="#verifyModal"><a href="#"><img src="images/gplus.png" alt="" /><i>Sign In with Google+</i><div class="clear"></div></a></div>
                             </div>
                             <div class="clear"></div>
                             <!-- end-contact-form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="verifyModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="wrap">
+                            <div class="col-md-offset-2 col-md-8">
+                                <h3 class="redPinkText text-center">Please verify your contact info</h3>
+                                <div class="input-group" style="margin-top:10%;">
+                                    <span class="input-group-addon">+91</span>
+                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                            <div class="col-md-offset-4 col-md-4">
+                                <button class="btn buttonNext whiteText modalBtn">Verify</button>
+                            </div>
+                            <div class="col-md-offset-2 col-md-8 text-center">
+                                Your number remains private.This is only shared once you have a confirmed booking with another user.
+                            </div>
+                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>

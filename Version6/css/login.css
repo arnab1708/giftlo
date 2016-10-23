@@ -185,7 +185,8 @@
 .span {
     margin-top: 10.4%;
     display: block;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     background: #3B5998;
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
@@ -214,7 +215,8 @@
 
 .span1 {
     margin-top: 9%;
-    width: 100%;
+    width: 60%;
+    margin: 7% auto;
     background: #45B0E3;
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
@@ -243,7 +245,8 @@
 
 .span2 {
     margin-top: 9%;
-    width: 100%;
+    width: 60%;
+    margin: 7% auto;
     background: #DE4C34;
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
